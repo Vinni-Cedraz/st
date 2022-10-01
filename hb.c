@@ -18,8 +18,7 @@
  * latter to enable the (selected) font features.
  */
 
-hb_feature_t features[] = { 0 };
-//hb_feature_t features[] = { FEATURE('s','s','0','1'), FEATURE('s','s','0','2'), FEATURE('s','s','0','3'), FEATURE('s','s','0','5'), FEATURE('s','s','0','6'), FEATURE('s','s','0','7'), FEATURE('s','s','0','8'), FEATURE('z','e','r','o') };
+hb_feature_t features[] = { FEATURE('c','v','3','1'), FEATURE('c','v','2','9'), FEATURE('c','v','1','6'), FEATURE('s','s','0','3'), FEATURE('s','s','0','5')/*  FEATURE('s','s','0','7'), FEATURE('s','s','0','8'), FEATURE('z','e','r','o')  */};
 
 void hbtransformsegment(XftFont *xfont, const Glyph *string, hb_codepoint_t *codepoints, int start, int length);
 hb_font_t *hbfindfont(XftFont *match);
