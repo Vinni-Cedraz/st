@@ -1,3 +1,4 @@
+SHELL = /bin/bash 
 # st - simple terminal
 # See LICENSE file for copyright and license details.
 .POSIX:
@@ -7,6 +8,7 @@ include config.mk
 SRC = st.c x.c boxdraw.c hb.c
 OBJ = $(SRC:.c=.o)
 STLDFLAGS += -O3
+CC = cc
 
 all: options st
 

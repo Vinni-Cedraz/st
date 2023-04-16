@@ -2776,8 +2776,7 @@ drawregion(int x1, int y1, int x2, int y2)
 	}
 }
 
-void
-draw(void)
+void draw(void)
 {
 	int cx = term.c.x, ocx = term.ocx, ocy = term.ocy;
 
@@ -2807,8 +2806,7 @@ draw(void)
 		xximspot(term.ocx, term.ocy);
 }
 
-void
-redraw(void)
+void redraw(void)
 {
 	tfulldirt();
 	draw();
