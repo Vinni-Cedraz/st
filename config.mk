@@ -1,10 +1,10 @@
 # st version
-VERSION = 0.8.5
+VERSION = 0.9
 
 # Customize below to fit your system
 
 # paths
-PREFIX = ~/.local
+PREFIX = ~/.local/
 MANPREFIX = $(PREFIX)/share/man
 
 X11INC = /usr/X11R6/include
@@ -32,6 +32,7 @@ STLDFLAGS = $(LIBS) $(LDFLAGS)
 #LIBS = -L$(X11LIB) -lm -lX11 -lutil -lXft \
 #       `$(PKG_CONFIG) --libs fontconfig` \
 #       `$(PKG_CONFIG) --libs freetype2`
+#MANPREFIX = ${PREFIX}/man
 
 # compiler and linker
 # CC = c99
